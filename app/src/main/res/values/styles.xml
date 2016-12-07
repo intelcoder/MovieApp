@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--         Common Parent Styles          -->
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MovieGrid" parent="MatchParent">
+        <item name="android:numColumns">auto_fit</item>
+    </style>
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Detail View Styles-->
+    <!--
+    <style name="">
+        <item name=""></item>
+    </style>
+    -->
+
+    <style name="DetailContentsRoot" parent="MatchParent">
+
+    </style>
+
+    <style name="DetailMoviePoster">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">220dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+
+    </style>
+    <style name="DetailTitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="DetailMiddleWrapper" parent="MatchWrap">
+
+    </style>
+
+    <style name="MiddlePlaceHolder">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="DetailOverViewText">
+        <item name="android:textSize">15sp </item>
+    </style>
+
+    <style name="DetailProgressBar" parent="WrapContent">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="DetailTitle">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+
+    </style>
+
+
+
+    <!--Contents that placed on right side of middle-->
+    <style name ="DetailLeftOfSplitter"></style>
+
+    <style name="DetailLeftOfSplitter.ReleaseDate" parent="MatchWrap">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+    <style name="DetailLeftOfSplitter.Rating" parent="WrapContent">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+    <style name="DetailLeftOfSplitter.Runtime" parent="WrapContent">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+
+    <style name="RecyclerViewTitle" parent="MatchWrap">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <!--End Detail View Styles-->
+
+
+
+    <!--Recycler View Review-->
+    <style name="ReviewItem" parent="WrapContent">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="ReviewItem.Author">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ReviewItem.Content">
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="ReviewItem.Url">
+
+
+    </style>
+
+
+    <!--Recycler View Trailer Styles-->
+    <style name="TrailerProgressBar" parent="WrapContent">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">41dp</item>
+        <item name="android:layout_marginLeft">41dp</item>
+
+    </style>
+    <!--End Recycler View Trailer Styles-->
+</resources>

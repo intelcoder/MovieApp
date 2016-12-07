@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="action_settings">Settings</string>
+    <string name="movie.data.poster.base.url">http://image.tmdb.org/t/p/w185</string>
+    <string name="movie.data.base.url">http://api.themoviedb.org/</string>
+
+    <string name="movie.main.imageview.desc">Title</string>
+    <string name="movie.detail.textview.title">Title</string>
+    <string name="movie.detail.textview.releaseDate">Release date</string>
+    <string name="movie.detail.textview.runTime">Run Time</string>
+    <string name="movie.detail.textview.rating">Rating</string>
+    <string name="movie.detail.textview.overview">overview</string>
+    <string name="movie.detail.imageview.moviePoster.desc">Movie poster picture</string>
+    <string name="title_activity_detail">Movie Detail</string>
+
+
+    <!--Menu items-->
+    <string name="menu.popularity">Most Popular</string>
+    <string name="menu.vote">Highest Rated</string>
+    <string name="menu.favorite">Favorites</string>
+    <string name="share">Share</string>
+    <string name="review.auther">reviewAuther</string>
+    <string name="review.content">Review Body</string>
+    <string name="review.url">Review Url</string>
+    <string name="ReviewTitle">Reviews</string>
+    <string name="trailer.title">Trailers</string>
+
+
+    <bool name="system.internet">true</bool>
+
+    <string name='movie.sort.popularity.desc'>popularity.desc</string>
+    <string name='movie.sort.popularity.asc'>popularity.asc</string>
+    <string name="action.popularity">Popularity</string>
+
+
+</resources>

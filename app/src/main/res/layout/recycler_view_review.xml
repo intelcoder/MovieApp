@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+  >
+    <TextView
+        android:id="@+id/reviewAuthor"
+        android:text="@string/review.auther"
+        style="@style/ReviewItem.Author"
+        />
+    <TextView
+        android:id="@+id/reviewContent"
+        android:text="@string/review.content"
+        android:layout_below="@id/reviewAuthor"
+        style="@style/ReviewItem.Content"
+        />
+    <TextView
+        android:id="@+id/reviewUrl"
+        android:text="@string/review.url"
+        android:layout_below="@id/reviewContent"
+        style="@style/ReviewItem.Url"
+        />
+</RelativeLayout>

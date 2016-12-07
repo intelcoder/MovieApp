@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="horizontal"
+    android:id="@+id/dual_pane_layout"
+    android:layout_below="@+id/toolbar"
+    style="@style/MatchParent"
+    >
+    <FrameLayout
+        android:id="@+id/movie_grid_holder"
+        android:layout_weight="1"
+        style="@style/MatchWrap"
+        />
+    <FrameLayout
+        android:id="@+id/movie_detail_holder"
+        android:layout_weight="1"
+        style="@style/MatchWrap"/>
+
+</LinearLayout>

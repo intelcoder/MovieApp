@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_root"
+    style="@style/DetailContentsRoot">
+    <ProgressBar
+        android:id="@+id/detail_progressbar"
+        android:visibility="visible"
+        style="@style/DetailProgressBar"
+     />
+
+    <RelativeLayout
+        android:id="@+id/detail_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/text_view_movie_title"
+            android:layout_height="match_parent"
+            android:text="@string/movie.detail.textview.title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pureWhite"
+            android:gravity="center_vertical"
+            style="@style/DetailTitleText"
+            />
+        <ImageView
+            android:id="@+id/image_view_star"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:contentDescription=""
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_star_rate_white_18px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/detail_top"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:visibility="invisible"
+        style="@style/MatchWrap">
+
+    <RelativeLayout
+        android:id="@+id/detail_middle_wrapper"
+        android:layout_below="@+id/detail_top"
+        style="@style/DetailMiddleWrapper">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/middleSplitter"
+            style="@style/MiddlePlaceHolder" />
+
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_alignEnd="@+id/middleSplitter"
+            android:layout_alignRight="@+id/middleSplitter"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/movie.detail.imageview.moviePoster.desc"
+            style="@style/DetailMoviePoster"/>
+
+        <TextView
+            android:id="@+id/text_view_releaseDate"
+            android:layout_alignLeft="@+id/middleSplitter"
+            android:layout_alignStart="@+id/middleSplitter"
+            android:text="@string/movie.detail.textview.releaseDate"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/DetailLeftOfSplitter.ReleaseDate"/>
+
+
+        <TextView
+            android:id="@+id/text_view_movieRating"
+            android:text="@string/movie.detail.textview.rating"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignLeft="@+id/middleSplitter"
+            android:layout_alignStart="@+id/middleSplitter"
+            android:layout_below="@+id/text_view_releaseDate"
+            style="@style/DetailLeftOfSplitter.Rating"/>
+
+        <TextView
+            android:id="@+id/text_view_runtime"
+            android:layout_below="@+id/text_view_movieRating"
+            android:layout_alignLeft="@+id/middleSplitter"
+            android:layout_alignStart="@+id/middleSplitter"
+            android:text="@string/movie.detail.textview.runTime"
+            style="@style/DetailLeftOfSplitter.Runtime"
+            />
+
+        <TextView
+            android:id="@+id/text_view_movieOverView"
+            android:layout_margin="5dp"
+            android:text="@string/movie.detail.textview.overview"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp"
+            android:layout_below="@+id/moviePoster"
+            style="@style/WrapContent" />
+
+        <TextView
+            android:id="@+id/text_view_trailer_title"
+            android:text="@string/trailer.title"
+            android:layout_below="@+id/text_view_movieOverView"
+            style="@style/RecyclerViewTitle"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trailerRecycler"
+            android:layout_below="@id/text_view_trailer_title"
+            style="@style/MatchWrap"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/ReviewTitle"
+            android:text="@string/ReviewTitle"
+            android:layout_below="@+id/trailerRecycler"
+            style="@style/RecyclerViewTitle"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reviewRecycler"
+            android:layout_below="@id/ReviewTitle"
+            style="@style/MatchWrap"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
