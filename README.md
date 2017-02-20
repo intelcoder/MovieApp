@@ -1,6 +1,6 @@
 # MovieApp
 
-This android application shows you list of movies in image grid 
+This android application shows you list of movies in a image grid 
 
 ##Features
 
